@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-assets>
+      <img id="img-1" src="img/2.jpg" />
+      <img id="img-2" src="img/1.jpg" />
+      <img id="img-3" src="img/3.jpg" />
+      <img id="img-4" src="img/4.jpg" />
+      <img id="img-5" src="img/5.jpg" />
+    </a-assets>
+    <a-scene>
+      <a-image
+        id="goku(sword)"
+        src="#img-1"
+        position="0, 1.5, -3"
+        width="1.024"
+        height="0.768"
+        scale="3 3 1"
+      ></a-image>
+      <a-curvedimage
+        id="elden-ring(back)"
+        src="#img-2"
+        theta-length="90"
+        theta-start="135"
+        position="0, 1.5, 0"
+        radius="0.707"
+        height="0.833"
+        scale="3 3 3"
+      ></a-curvedimage>
+      <a-curvedimage
+        src="#img-3"
+        theta-length="50"
+        theta-start="90"
+        position="0, 1.5, 0"
+        radius="0.5"
+        height="0.327"
+        scale="3 3 3"
+      ></a-curvedimage>
+      <a-curvedimage
+        src="#img-4"
+        theta-length="50"
+        theta-start="155"
+        position="0, 1.5, 0"
+        radius="0.5"
+        height="0.327"
+        scale="3 3 3"
+      ></a-curvedimage>
+      <a-curvedimage
+        src="#img-5"
+        theta-length="50"
+        theta-start="220"
+        position="0, 1.5, 0"
+        radius="0.5"
+        height="0.327"
+        scale="3 3 3"
+      ></a-curvedimage>
+      <a-box
+        color="red"
+        position="0 1.5 -1.5"
+        opacity="0.5"
+        width="3"
+        height="0.1"
+        depth="3"
+      ></a-box>
+    </a-scene>
+  </body>
+</html>
